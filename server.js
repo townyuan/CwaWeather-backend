@@ -142,7 +142,7 @@ app.get("/api/health", (req, res) => {
 });
 
 // 取得高雄天氣預報
-app.get("/api/weather/taipen", getTaipeiWeather);
+app.get("/api/weather/taipei", getTaipeiWeather);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
