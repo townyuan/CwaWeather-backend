@@ -48,7 +48,7 @@ const getTaipeiWeather = async (req, res) => {
     if (!locationData) {
       return res.status(404).json({
         error: "查無資料",
-        message: "無法取得臺北市氣資料",
+        message: "無法取得臺北市天氣資料",
       });
     }
 
@@ -131,7 +131,7 @@ app.get("/", (req, res) => {
   res.json({
     message: "歡迎使用 CWA 天氣預報 API",
     endpoints: {
-      kaohsiung: "/api/weather/taipei",
+      taipei: "/api/weather/taipei",
       health: "/api/health",
     },
   });
